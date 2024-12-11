@@ -1,0 +1,41 @@
+1. Configuration
+•	Set user details:
+bash
+Copy code
+git config --global user.name "Your Name"
+git config --global user.email "you@example.com"
+2. Repository Management
+•	Initialize a repository: git init
+•	Clone a repository: git clone <url>
+3. Staging and Committing
+•	Check status: git status
+•	Stage changes: git add <file> or git add . (all files)
+•	Commit changes: git commit -m "Message"
+4. Viewing History
+•	View commits: git log (or git log --oneline for a brief view)
+•	Check changes: git diff
+5. Branching and Merging
+•	Create a branch: git branch <branch-name>
+•	Switch branches: git checkout <branch-name> (or git switch <branch-name>)
+•	Merge a branch: git merge <branch-name>
+•	Delete a branch: git branch -d <branch-name>
+6. Remote Repositories
+•	Add a remote: git remote add origin <url>
+•	Push to remote: git push origin <branch-name>
+•	Pull updates: git pull
+•	Fetch changes: git fetch
+7. Undoing Changes
+•	Unstage: git reset <file>
+•	Revert commit: git revert <commit-hash>
+•	Discard changes: git checkout -- <file>
+8. Stashing
+•	Save changes temporarily: git stash
+•	Apply stashed changes: git stash apply
+•	Drop stash: git stash drop
+9. Tagging
+•	Create a tag: git tag <tag-name>
+•	Push a tag: git push origin <tag-name>
+10. Collaboration and Rebase
+•	Rebase: git rebase <branch-name>
+•	Squash commits during rebase: git rebase -i HEAD~<n>
+
