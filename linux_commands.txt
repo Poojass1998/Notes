@@ -1,0 +1,108 @@
+1. Basics of Linux
+What is Linux?
+Linux is an open-source, Unix-like operating system based on the Linux kernel. It powers servers, desktops, mobile devices (Android), and embedded systems. Popular distributions include Ubuntu, Fedora, and CentOS.
+
+The Linux Kernel and its Role:
+The kernel is the core of the Linux operating system, managing hardware, memory, processes, and system calls.
+
+Linux File System Hierarchy:
+
+/ - Root directory, the starting point of the Linux file system.
+/home - Contains user home directories.
+/etc - System configuration files.
+/var - Variable files like logs, caches, and spool files.
+/usr - User programs and libraries.
+Absolute vs. Relative Paths:
+
+Absolute path: Specifies the complete path from the root directory, e.g., /home/user/documents.
+Relative path: Specifies the path relative to the current directory, e.g., ./documents.
+2. Linux Commands
+File and Directory Management
+ls: Lists files and directories.
+pwd: Displays the current directory path.
+cd: Changes the directory.
+mkdir: Creates a new directory.
+rmdir: Deletes an empty directory.
+touch: Creates an empty file or updates a file's timestamp.
+cp: Copies files and directories.
+mv: Moves or renames files and directories.
+rm: Deletes files and directories.
+ls -a: Lists all files, including hidden ones (those starting with .).
+File Content Management
+cat: Displays the content of a file.
+less/more: Paginate through file content.
+head/tail: Display the beginning or end of a file.
+grep: Searches for a pattern in files.
+find: Searches files and directories based on criteria.
+Permissions
+chmod: Changes file permissions.
+Example: chmod 755 file gives read, write, execute permissions to the owner and read, execute permissions to others.
+chown: Changes file ownership.
+chgrp: Changes the group ownership of a file.
+Archiving and Compression
+tar: Archives files into a tarball (.tar).
+zip/unzip: Compresses and extracts .zip files.
+gzip/gunzip: Compresses and extracts .gz files.
+Package Management
+Debian-based:
+apt: Installs packages (e.g., apt install package_name).
+Red Hat-based:
+yum/dnf: Installs packages for Red Hat-based distributions.
+3. Processes and Services
+ps: Lists running processes.
+top: Displays active processes and their resource usage.
+kill: Terminates a process by PID.
+jobs: Lists background processes.
+systemctl: Manages services (start, stop, restart services).
+4. Shell and Scripting
+Shell types: Bash, Zsh, etc.
+
+Shell scripting basics:
+
+Start a script: #!/bin/bash
+Variables: x=10
+Loops:
+bash
+Copy code
+for i in {1..5}; do
+  echo $i
+done
+Running scripts: sh script.sh or ./script.sh.
+Command-line utilities:
+
+awk: Pattern scanning and processing.
+sed: Stream editor for text manipulation.
+5. Networking
+ifconfig: Configures network interfaces.
+ping: Tests connectivity to a host.
+netstat: Displays network connections and statistics.
+scp: Securely copies files between systems.
+wget/curl: Downloads files from the web.
+6. User and Group Management
+useradd: Adds a new user.
+passwd: Changes a user’s password.
+su: Switches to another user.
+sudo: Executes commands with superuser privileges.
+Key files:
+/etc/passwd: Stores user information.
+/etc/shadow: Stores encrypted passwords.
+7. Disk and Storage Management
+df: Displays disk usage of file systems.
+du: Displays disk usage of files and directories.
+fdisk: Manages disk partitions.
+mount/umount: Attaches/detaches file systems.
+fsck: Checks and repairs file systems.
+8. System Monitoring and Performance
+dmesg: Displays kernel messages.
+journalctl: Views logs managed by systemd.
+uptime: Shows system uptime.
+free: Displays memory usage.
+9. Security
+iptables: Configures firewall rules.
+ssh: Securely connects to remote servers.
+scp: Securely copies files between machines.
+10. Linux Boot Process
+BIOS/UEFI Initialization: Initializes hardware.
+Bootloader (GRUB): Loads the kernel.
+Kernel Initialization: Loads drivers and starts processes.
+Init/Systemd: Initializes user space and starts services.
