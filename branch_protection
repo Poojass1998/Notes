@@ -1,0 +1,11 @@
+branch ruleset:
+* any changes that comes to that branch it should have pull request before merging 
+*when the changes have been made to the file that is already been reveiwed and approved(stale) again it should be approved
+*before merging the code owner should approved that file
+*the files should have approval of someone other than one who is pushing
+* the file should cleared the review history meaning the previous reveiws should cleared
+* only github verified users can push 
+* the commit history should be linear to that particular file
+* we can define branch rules to disable force pushing
+* can make the branch as read only by locking the branch
+* the users in the bypassing list shouls also follow the above ruleset 
