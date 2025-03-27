@@ -1,1 +1,1 @@
-repository about cheat sheet and commands
+This repository has cheat sheets and commands 
